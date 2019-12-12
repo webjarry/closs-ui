@@ -1,6 +1,6 @@
 {
   "name": "@closs/closs-ui",
-  "version": "0.1.2",
+  "version": "0.1.7",
   "main": "./dist/closs-ui.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",

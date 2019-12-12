@@ -1,8 +1,11 @@
 <template>
     <div class="cls-views">
-        <div class="cls-main">
-            <slot></slot>
+        <div class="cls-main" v-x>
+            <div class="isBarPadding" :class="isBar ? 'isBar' : ''">
+                <slot></slot>
+            </div>
         </div>
+
         <transition name="topbar" mode="out-in">
             <cls-tab-bar :bars="tabBarItem" v-if="isBar" v-show="showBar"></cls-tab-bar>
         </transition>

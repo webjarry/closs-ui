@@ -5,12 +5,20 @@
 .cls-views {
   position: relative;
 
+  .cls-main {
+    .isBarPadding {
+      &.isBar {
+        padding-bottom: 1.2rem;
+      }
+    }
+  }
+
   .cls-bar-box {
     z-index: 1;
     position: fixed;
     bottom: 0;
-    right: 0.2rem;
-    left: 0.2rem;
+    right: 0.4rem;
+    left: 0.4rem;
     padding-bottom: 0.1rem;
 
     .cls-bar {
@@ -23,12 +31,12 @@
 
         .item {
           width: 33.33%;
-          padding: 0.1rem 0;
+          padding: 0.2rem 0;
           text-align: center;
 
           .item-icon {
-            width: 0.2rem;
-            height: 0.2rem;
+            width: 0.4rem;
+            height: 0.4rem;
             margin: 0 auto;
 
             img {
@@ -37,8 +45,8 @@
           }
 
           .item-text {
-            font-size: 0.12rem;
-            padding-top: 0.05rem;
+            font-size: 0.24rem;
+            padding-top: 0.1rem;
           }
 
           &:active {
@@ -65,9 +73,9 @@
 .index-container, .login-container, .register-container {
   .cls-card {
     width: 95%;
-    height: 2rem;
+    height: 4rem;
     background-color: #1a1a1a;
-    border-radius: 0.1rem;
-    margin: 0.3rem auto;
+    border-radius: 0.2rem;
+    margin: 0.6rem auto;
   }
 }
