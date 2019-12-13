@@ -1,6 +1,6 @@
 <template>
-    <div class="cls-button" v-x>
-      Closs Button
+    <div class="cls-button cls-radius--style primary--color">
+        <slot></slot>
     </div>
 </template>
 

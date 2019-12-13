@@ -1,15 +1,32 @@
 <template>
     <cls-views :is-bar="true" :tab-bar-item="list" class="index-container">
-        <div class="cls-card" v-for="(item, index) in 12" :key="index"></div>
+        <cls-button>这里是一个按钮</cls-button>
+        <cls-cards v-for="(item, index) in 10" :key="index">
+            <h1>这是一段标题.....</h1>
+            <h2>这是一段标题.....</h2>
+            <h3>这是一段标题.....</h3>
+            <h4>这是一段标题.....</h4>
+            <h5>这是一段标题.....</h5>
+            <h6>这是一段标题.....</h6>
+        </cls-cards>
+
+        <div class="cls-toast">
+            <div class="cls-toast-blur cls-radius--style"></div>
+        </div>
     </cls-views>
 </template>
 
 <script>
     import ClsViews from "../components/ClsViews";
+    import ClsButton from "../components/ClsButton";
+    import ClsCards from "../components/ClsCards";
+    import { Toast } from '../utils/components';
 
     export default {
         components: {
-            ClsViews
+            ClsCards,
+            ClsViews,
+            ClsButton
         },
         data () {
             return {
@@ -38,10 +55,11 @@
                 ]
             }
         },
-        methods: {
-            onsubmit: function () {
-                window.console.log('onsubmit')
-            }
+        mounted () {
+            Toast({
+                icon: '',
+                message: '成功!'
+            })
         }
     }
 </script>
