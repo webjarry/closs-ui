@@ -65,7 +65,7 @@
     } else {
         doc.addEventListener(
             "DOMContentLoaded",
-            function (e) {
+            function () {
                 doc.body.style.fontSize = "0.16rem";
             },
             false

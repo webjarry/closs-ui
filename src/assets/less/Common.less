@@ -1,0 +1,38 @@
+@theme: #7bbfea;
+@import "Animates";
+
+* {
+  -webkit-touch-callout:none;  /*系统默认菜单被禁用*/
+  -webkit-user-select:none; /*webkit浏览器*/
+  -khtml-user-select:none; /*早期浏览器*/
+  -moz-user-select:none; /*火狐*/
+  -ms-user-select:none;  /*IE10*/
+  user-select:none;
+}
+
+body, button, p, pre {
+  margin: 0;
+}
+
+.primary--color {
+  background-color: @theme;
+  color: #FFF;
+  display: inline-block;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+  color: #1a1a1a;
+  background: #FFF;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cls-radius--style {
+  -webkit-border-radius: 0.13rem;
+  -moz-border-radius: 0.13rem;
+  -ms-border-radius: 0.13rem;
+  -o-border-radius: 0.13rem;
+  border-radius: 0.13rem;
+}
+
+@import "Style";

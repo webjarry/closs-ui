@@ -1,0 +1,15 @@
+/* 设置持续时间和动画函数 */
+.topbar-enter-active {
+  transition: all .4s ease;
+}
+
+.topbar-leave-active {
+  transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.topbar-enter, .topbar-leave-to
+  /* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateY(30px) scale(0.9);
+  opacity: 0;
+}
+
