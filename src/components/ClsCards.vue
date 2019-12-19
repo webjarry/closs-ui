@@ -1,6 +1,21 @@
 <template>
     <div class="cls-cards">
-        <div class="cls-cards-header"></div>
+        <div class="cls-cards-header">
+            <div class="user-info">
+                <div class="avatar">
+                    <img src="../assets/images/avatar.jpeg" alt="" />
+                </div>
+
+                <div class="info">
+                    <div class="name">
+                        <span>陌娱用户</span>
+                        <div class="desc">
+                            <span>这里是用户的个人介绍!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="cls-card-main">
             <slot></slot>

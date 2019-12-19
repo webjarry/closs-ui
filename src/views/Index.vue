@@ -1,34 +1,27 @@
 <template>
     <cls-views :is-bar="true" :tab-bar-item="list" class="index-container">
-        <cls-button>这里是一个按钮</cls-button>
         <cls-cards v-for="(item, index) in 10" :key="index">
-            <h1>这是一段标题.....</h1>
-            <h2>这是一段标题.....</h2>
-            <h3>这是一段标题.....</h3>
-            <h4>这是一段标题.....</h4>
-            <h5>这是一段标题.....</h5>
-            <h6>这是一段标题.....</h6>
-        </cls-cards>
+            <div class="video-box">
+                <video src="https://www.w3school.com.cn/i/movie.ogg"></video>
+            </div>
 
-        <div class="cls-toast">
-            <div class="cls-toast-blur cls-radius--style"></div>
-        </div>
+            <div class="tag">
+                <div class="tag-item" v-for="(item, index) in 6" :key="index"><span>动漫迷 ></span></div>
+            </div>
+        </cls-cards>
     </cls-views>
 </template>
 
 <script>
     import ClsViews from "../components/ClsViews";
-    import ClsButton from "../components/ClsButton";
     import ClsCards from "../components/ClsCards";
-    import { Toast } from '../utils/components';
 
     export default {
         components: {
             ClsCards,
-            ClsViews,
-            ClsButton
+            ClsViews
         },
-        data () {
+        data() {
             return {
                 list: [
                     {
@@ -55,11 +48,12 @@
                 ]
             }
         },
-        mounted () {
-            Toast({
-                icon: '',
-                message: '成功!'
-            })
+        methods: {
+            onSubmit: function () {
+            }
+        },
+        mounted() {
+
         }
     }
 </script>
