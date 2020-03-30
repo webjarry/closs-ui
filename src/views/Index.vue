@@ -16,6 +16,7 @@
     import ClsViews from "../components/ClsViews";
     import ClsButton from "../components/ClsButton";
     import ClsCards from "../components/ClsCards";
+    import {post} from "../../lib/axios";
 
     export default {
         components: {
@@ -51,6 +52,14 @@
             }
         },
         mounted () {
+            // let params = new FormData();
+            // params.append('userPhone', '18221710094');
+            // params.append('userCode', '13333');
+
+
+            post('/membership/user/login', {}).then(res => {
+                window.console.log(res)
+            });
         }
     }
 </script>

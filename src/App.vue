@@ -1,8 +1,6 @@
 <template>
     <div id="app">
-        <transition name="topbar" mode="out-in">
-            <router-view/>
-        </transition>
+        <router-view/>
     </div>
 </template>
 
